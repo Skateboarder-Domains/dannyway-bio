@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "wrangler pages dev . --compatibility-date=2024-01-01",
     "deploy": "wrangler pages deploy .",
-    "build": "echo 'No build step required - static site with Functions'"
+    "build": "echo 'No build step required - static site with Functions'",
+    "setup-database": "node setup_database.js",
+    "analyze": "node -e \"const { main } = require('./setup_database'); main().then(() => console.log('Analysis complete')).catch(console.error)\""
   },
   "keywords": ["skateboarding", "biography", "cloudflare-pages", "neon"],
   "author": "skateboard.bio network",
