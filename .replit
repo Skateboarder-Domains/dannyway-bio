@@ -1,0 +1,12 @@
+run = "npm install && npx wrangler pages dev . --compatibility-date=2024-01-01"
+entrypoint = "index.html"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "npm run deploy"]
+
+[[ports]]
+localPort = 8788
+externalPort = 80
