@@ -1,6 +1,7 @@
 {
   "name": "dannyway-bio",
   "version": "1.0.0",
+  "type": "module",
   "description": "Official biography site for dannyway.bio",
   "scripts": {
     "dev": "wrangler pages dev . --compatibility-date=2024-01-01",

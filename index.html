@@ -3,335 +3,285 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title">Skater Bio | Professional Skateboarder</title>
-    <meta name="description" content="Official biography of a professional skateboarder. Part of the skateboard.bio network.">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: #1a1a1a;
-            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
-            min-height: 100vh;
-        }
-
-        .header {
-            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-
-        .header h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 0.5rem;
-        }
-
-        .header .tagline {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 3rem 2rem;
-        }
-
-        .section {
-            background: white;
-            border-radius: 16px;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .section-title {
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: #1a1a1a;
-        }
-
-        .bio-text {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #444;
-        }
-
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .info-item {
-            padding: 1.2rem;
-            background: #f8f8f8;
-            border-radius: 10px;
-            border-left: 4px solid #333;
-        }
-
-        .info-label {
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #666;
-            font-weight: 600;
-            margin-bottom: 0.4rem;
-        }
-
-        .info-value {
-            font-size: 1.1rem;
-            color: #1a1a1a;
-            font-weight: 500;
-        }
-
-        .sponsors {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .sponsor-badge {
-            background: linear-gradient(135deg, #333, #555);
-            color: white;
-            padding: 1.2rem;
-            border-radius: 12px;
-            text-align: center;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: transform 0.3s ease;
-        }
-
-        .sponsor-badge:hover {
-            transform: translateY(-3px);
-        }
-
-        .loading {
-            text-align: center;
-            padding: 3rem;
-            color: #666;
-            font-size: 1.1rem;
-        }
-
-        .error {
-            background: #fee;
-            border: 2px solid #fcc;
-            color: #c00;
-            padding: 2rem;
-            border-radius: 12px;
-            margin: 2rem;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .social-link {
-            background: #333;
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            font-size: 1.3rem;
-            transition: transform 0.3s ease, background 0.3s ease;
-        }
-
-        .social-link:hover {
-            transform: scale(1.1);
-            background: #555;
-        }
-
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2rem;
-            }
-            
-            .section {
-                padding: 1.5rem;
-            }
-        }
-    </style>
+    <title>Danny Way | Legendary Professional Skateboarder</title>
+    <meta name="description" content="Official biography of Danny Way - legendary professional skateboarder, pioneer of the Mega Ramp, and the first person to jump the Great Wall of China on a skateboard.">
+    <meta name="keywords" content="Danny Way, professional skateboarder, Mega Ramp, Great Wall of China, Plan B Skateboards, DC Shoes, skateboarding legend">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Danny Way | Legendary Professional Skateboarder">
+    <meta property="og:description" content="Official biography of Danny Way - pioneering the limits of skateboarding since 1989.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dannyway.bio">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Danny Way | Legendary Professional Skateboarder">
+    <meta name="twitter:description" content="Official biography of Danny Way - pioneering the limits of skateboarding since 1989.">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://dannyway.bio">
 </head>
 <body>
-    <div class="header">
-        <h1 id="skater-name">Loading...</h1>
-        <p class="tagline" id="skater-tagline">Professional Skateboarder</p>
-    </div>
-
-    <div class="container">
-        <div id="content">
-            <div class="loading">Loading skater profile...</div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">DANNY<span>WAY</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="biography.html" class="nav-link">Biography</a></li>
+                <li class="nav-item"><a href="achievements.html" class="nav-link">Achievements</a></li>
+                <li class="nav-item"><a href="great-wall.html" class="nav-link">Great Wall</a></li>
+                <li class="nav-item"><a href="mega-ramp.html" class="nav-link">Mega Ramp</a></li>
+                <li class="nav-item"><a href="videos.html" class="nav-link">Videos</a></li>
+                <li class="nav-item"><a href="companies.html" class="nav-link">Companies</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="timeline.html" class="nav-link">Timeline</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 id="hero-name">Danny Way</h1>
+            <p class="tagline" id="hero-tagline">The Daredevil</p>
+            <p class="subtitle">Pioneering the Limits of Skateboarding Since 1989</p>
+            <div class="hero-cta">
+                <a href="biography.html" class="btn btn-primary">Discover His Story</a>
+                <a href="great-wall.html" class="btn btn-secondary">Great Wall Jump</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <div class="container">
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">Born</div>
+                <div class="info-value" id="birthdate">April 15, 1974</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Hometown</div>
+                <div class="info-value" id="hometown">San Diego, CA</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Stance</div>
+                <div class="info-value" id="stance">Goofy</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Turned Pro</div>
+                <div class="info-value" id="turned-pro">1989</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">SOTY Awards</div>
+                <div class="info-value">2x Winner</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">World Records</div>
+                <div class="info-value">Multiple</div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section class="section">
+            <h2 class="section-title">Pushing Boundaries, Redefining Possible</h2>
+            <div class="section-content">
+                <p id="bio-content">
+                    Danny Way is a legendary professional skateboarder renowned for pushing the boundaries of what's possible on a skateboard. Born in Portland, Oregon and raised in San Diego, California, Danny has revolutionized skateboarding through his fearless approach and innovative spirit.
+                </p>
+                <p style="margin-top: 1.5rem;">
+                    He is best known for jumping the Great Wall of China in 2005, pioneering the Mega Ramp, and setting multiple world records. As a two-time Thrasher Magazine Skater of the Year and multiple X Games gold medalist, Danny's influence on skateboarding is immeasurable.
+                </p>
+                <a href="biography.html" class="btn btn-primary" style="margin-top: 1.5rem;">Read Full Biography →</a>
+            </div>
+        </section>
+
+        <!-- Featured Achievements -->
+        <section class="section">
+            <h2 class="section-title">Legendary Achievements</h2>
+            <div class="achievement-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">🏆</div>
+                    <h3 class="achievement-title">2x Skater of the Year</h3>
+                    <p class="achievement-text">Thrasher Magazine's highest honor, awarded twice for pushing skateboarding to new heights</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🥇</div>
+                    <h3 class="achievement-title">X Games Gold</h3>
+                    <p class="achievement-text">Multiple gold medals in Big Air competitions, dominating the biggest ramps in skateboarding</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🌏</div>
+                    <h3 class="achievement-title">Great Wall Jump</h3>
+                    <p class="achievement-text">First person ever to jump the Great Wall of China on a skateboard (2005)</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">📏</div>
+                    <h3 class="achievement-title">23.5 Feet High</h3>
+                    <p class="achievement-text">World record for highest air achieved on a skateboard</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🚀</div>
+                    <h3 class="achievement-title">75-Foot Gap</h3>
+                    <p class="achievement-text">Record-breaking 360 over a 75-foot gap on the Mega Ramp</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">🎯</div>
+                    <h3 class="achievement-title">Mega Ramp Pioneer</h3>
+                    <p class="achievement-text">Pioneered and popularized the massive Mega Ramp structure</p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <a href="achievements.html" class="btn btn-primary">View All Achievements →</a>
+            </div>
+        </section>
+
+        <!-- Featured Pages -->
+        <section class="section">
+            <h2 class="section-title">Explore More</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">The Great Wall Jump</h3>
+                        <p class="card-text">
+                            In 2005, Danny made history by becoming the first person to jump over the Great Wall of China on a skateboard - a feat that captured the world's attention.
+                        </p>
+                        <a href="great-wall.html" class="card-link">Read More →</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Mega Ramp Innovation</h3>
+                        <p class="card-text">
+                            Danny pioneered the Mega Ramp, a massive structure that revolutionized skateboarding and enabled unprecedented heights and distances.
+                        </p>
+                        <a href="mega-ramp.html" class="card-link">Learn More →</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <h3 class="card-title">Business Ventures</h3>
+                        <p class="card-text">
+                            Co-founder of Plan B Skateboards and DC Shoes, Danny's entrepreneurial spirit has shaped the skateboarding industry.
+                        </p>
+                        <a href="companies.html" class="card-link">Discover More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponsors -->
+        <section class="section">
+            <h2 class="section-title">Sponsors & Partners</h2>
+            <div class="grid grid-4" id="sponsors-grid">
+                <div class="card">
+                    <div class="card-content text-center">
+                        <h3 class="card-title">DC Shoes</h3>
+                        <p class="card-text">Co-Founder</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content text-center">
+                        <h3 class="card-title">Plan B Skateboards</h3>
+                        <p class="card-text">Co-Founder</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Danny Way</h3>
+                <p>
+                    Danny Way is a legendary professional skateboarder who has revolutionized the sport through innovation, courage, and an unwavering commitment to pushing boundaries.
+                </p>
+                <div class="social-links">
+                    <a href="https://instagram.com/dannywayofficial" target="_blank" class="social-link" title="Instagram">📷</a>
+                    <a href="https://twitter.com/dannywayofficial" target="_blank" class="social-link" title="Twitter">🐦</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="biography.html">Biography</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="great-wall.html">Great Wall Jump</a></li>
+                    <li><a href="mega-ramp.html">Mega Ramp</a></li>
+                    <li><a href="timeline.html">Career Timeline</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>More</h3>
+                <ul class="footer-links">
+                    <li><a href="videos.html">Video Parts</a></li>
+                    <li><a href="companies.html">Companies</a></li>
+                    <li><a href="gallery.html">Photo Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Network</h3>
+                <p>Part of the <a href="https://skateboard.bio" target="_blank" style="color: #e74c3c; font-weight: 600;">skateboard.bio</a> network</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">
+                    Celebrating 150+ professional skateboarders with custom-designed biography sites.
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DannyWay.bio | Part of the skateboard.bio network | All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
     <script>
-        async function loadSkaterData() {
-            try {
-                const response = await fetch('/api/skater');
-                
-                if (!response.ok) {
-                    const error = await response.json();
-                    throw new Error(error.message || 'Failed to load skater data');
+        // Load skater data and update page
+        async function initHomePage() {
+            const skater = await window.DannyWayBio.loadSkaterData();
+            
+            if (skater) {
+                // Update hero
+                document.getElementById('hero-name').textContent = skater.full_name;
+                if (skater.nickname) {
+                    document.getElementById('hero-tagline').textContent = `"${skater.nickname}"`;
                 }
                 
-                const skater = await response.json();
-                
-                // Update page title and header
-                document.title = `${skater.full_name || 'Skater'} | Professional Skateboarder`;
-                document.getElementById('page-title').textContent = document.title;
-                document.getElementById('skater-name').textContent = skater.full_name || 'Unknown Skater';
-                document.getElementById('skater-tagline').textContent = skater.nickname ? `"${skater.nickname}"` : 'Professional Skateboarder';
-                
-                // Build content
-                let html = '';
-                
-                // Biography section
-                if (skater.bio) {
-                    html += `
-                        <div class="section">
-                            <h2 class="section-title">Biography</h2>
-                            <p class="bio-text">${skater.bio}</p>
-                        </div>
-                    `;
-                }
-                
-                // Profile information
-                html += `
-                    <div class="section">
-                        <h2 class="section-title">Profile</h2>
-                        <div class="info-grid">
-                `;
-                
+                // Update stats
                 if (skater.birth_date) {
-                    const birthDate = new Date(skater.birth_date);
-                    html += `
-                        <div class="info-item">
-                            <div class="info-label">Birth Date</div>
-                            <div class="info-value">${birthDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</div>
-                        </div>
-                    `;
+                    document.getElementById('birthdate').textContent = window.DannyWayBio.formatDate(skater.birth_date);
                 }
-                
-                if (skater.birthplace) {
-                    html += `
-                        <div class="info-item">
-                            <div class="info-label">Birthplace</div>
-                            <div class="info-value">${skater.birthplace}</div>
-                        </div>
-                    `;
-                }
-                
                 if (skater.hometown) {
-                    html += `
-                        <div class="info-item">
-                            <div class="info-label">Hometown</div>
-                            <div class="info-value">${skater.hometown}</div>
-                        </div>
-                    `;
+                    document.getElementById('hometown').textContent = skater.hometown;
                 }
-                
                 if (skater.stance) {
-                    html += `
-                        <div class="info-item">
-                            <div class="info-label">Stance</div>
-                            <div class="info-value">${skater.stance.charAt(0).toUpperCase() + skater.stance.slice(1)}</div>
-                        </div>
-                    `;
+                    document.getElementById('stance').textContent = skater.stance.charAt(0).toUpperCase() + skater.stance.slice(1);
                 }
-                
                 if (skater.turned_pro_year) {
-                    html += `
-                        <div class="info-item">
-                            <div class="info-label">Turned Pro</div>
-                            <div class="info-value">${skater.turned_pro_year}</div>
-                        </div>
-                    `;
+                    document.getElementById('turned-pro').textContent = skater.turned_pro_year;
                 }
                 
-                html += `
-                        </div>
-                    </div>
-                `;
-                
-                // Sponsors section
-                if (skater.sponsors && skater.sponsors.length > 0) {
-                    html += `
-                        <div class="section">
-                            <h2 class="section-title">Sponsors</h2>
-                            <div class="sponsors">
-                    `;
-                    
-                    skater.sponsors.forEach(sponsor => {
-                        html += `<div class="sponsor-badge">${sponsor}</div>`;
-                    });
-                    
-                    html += `
-                            </div>
-                        </div>
-                    `;
+                // Update bio
+                if (skater.bio) {
+                    document.getElementById('bio-content').textContent = skater.bio;
                 }
                 
-                // Social links section
-                if (skater.social_links && Object.keys(skater.social_links).length > 0) {
-                    html += `
-                        <div class="section">
-                            <h2 class="section-title">Connect</h2>
-                            <div class="social-links">
-                    `;
-                    
-                    if (skater.social_links.instagram) {
-                        html += `<a href="https://instagram.com/${skater.social_links.instagram}" target="_blank" class="social-link" title="Instagram">📷</a>`;
-                    }
-                    if (skater.social_links.tiktok) {
-                        html += `<a href="https://tiktok.com/@${skater.social_links.tiktok}" target="_blank" class="social-link" title="TikTok">🎵</a>`;
-                    }
-                    if (skater.social_links.twitter) {
-                        html += `<a href="https://twitter.com/${skater.social_links.twitter}" target="_blank" class="social-link" title="Twitter">🐦</a>`;
-                    }
-                    if (skater.social_links.youtube) {
-                        html += `<a href="https://youtube.com/${skater.social_links.youtube}" target="_blank" class="social-link" title="YouTube">📺</a>`;
-                    }
-                    
-                    html += `
-                            </div>
-                        </div>
-                    `;
-                }
-                
-                document.getElementById('content').innerHTML = html;
-                
-            } catch (error) {
-                console.error('Error loading skater data:', error);
-                document.getElementById('content').innerHTML = `
-                    <div class="error">
-                        <h2>⚠️ Error Loading Profile</h2>
-                        <p>${error.message}</p>
-                        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
-                            This skater may not be in the database yet. See DEV-GUIDE.md for setup instructions.
-                        </p>
-                    </div>
-                `;
+                // Generate structured data
+                window.DannyWayBio.generateStructuredData(skater);
             }
         }
         
-        loadSkaterData();
+        initHomePage();
     </script>
 </body>
 </html>

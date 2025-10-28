@@ -1,0 +1,18 @@
+# Robots.txt for DannyWay.bio
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://dannyway.bio/sitemap.xml
+
+# Crawl-delay for courtesy
+Crawl-delay: 1
+
+# Allow all static assets
+Allow: /styles.css
+Allow: /main.js
+Allow: /*.html
+
+# Disallow API endpoint from indexing (it returns JSON, not HTML)
+Disallow: /api/
+
