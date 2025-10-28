@@ -1,0 +1,20 @@
+{
+  "name": "dannyway-bio",
+  "version": "1.0.0",
+  "description": "Official biography site for dannyway.bio",
+  "scripts": {
+    "dev": "wrangler pages dev . --compatibility-date=2024-01-01",
+    "deploy": "wrangler pages deploy .",
+    "build": "echo 'No build step required - static site with Functions'"
+  },
+  "keywords": ["skateboarding", "biography", "cloudflare-pages", "neon"],
+  "author": "skateboard.bio network",
+  "license": "MIT",
+  "dependencies": {
+    "@neondatabase/serverless": "^0.9.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.0.0",
+    "wrangler": "^3.0.0"
+  }
+}
